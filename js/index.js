@@ -14,11 +14,23 @@ const goToHash = () => {
     behavior: 'smooth'
   });
 }
+const goToHash2 = () => {
+  document.getElementById('oferta').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+const goToHash3 = () => {
+  document.getElementById('kontakt').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 
 
 const base = {
     nav: document.querySelector('.navbar'),
-    arrow: document.querySelector('.arrow')
+    arrow: document.querySelector('.arrow'),
+    arrow2: document.querySelector('.arrow--2'),
+    arrow3: document.querySelector('.arrow--3')
 };
 
 function debounce(func, wait = 10, immediate = true) {
@@ -38,5 +50,7 @@ function debounce(func, wait = 10, immediate = true) {
 
   window.addEventListener('scroll', debounce(changeNav));
 
-  base.arrow.addEventListener('click', goToHash)
+  base.arrow.addEventListener('click', goToHash);
+  base.arrow2.addEventListener('click', goToHash2);
+  base.arrow3.addEventListener('click', goToHash3);
   document.getElementById('goToZawory').addEventListener('click', goToHash);

@@ -124,7 +124,7 @@ html {
   transition: all 0.8s ease;
 }
 .hero__container:hover {
-  text-shadow:1px 1px 1px #e7e7e2;
+  transform: scale(1.02);
   transition: all 0.8s ease;
 }
 
@@ -165,19 +165,19 @@ html {
 #zawory {
   background-image: url('../img/articTheme2.jpg');
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 130vh;
   color: #fff;
   position: relative;
 }
 
 .section__container {
   background-color: rgb(36, 36, 36, .8);
-  height: 120vh;
+  height: 130vh;
 }
 .section__container--zawory {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr
+  grid-template-rows: 1fr 1fr;
 }
 
 .section__title {
@@ -204,6 +204,20 @@ html {
   width: 75%;
   height: 75%;
 }
+
+.arrow__container--zawory {
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
+}
+
+.section__next {
+  position: absolute;
+  bottom: 17%;
+  left: 43%;
+}
+
+
 
 /* SECTION OFERTA */
 
@@ -258,7 +272,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 25px;
+  row-gap: 60px;
   
   width: 65%;
   margin-top: 3em;
@@ -300,5 +314,20 @@ html {
 .linefix {
   display: flex;
   flex-direction: row;
+}
+
+/* FOOTER */
+
+.footer__container {
+  margin-top: 14em;
+  text-align: center;
+  font-size: .7em;
+  font-style: none;
+}
+
+.footer__container>p a {
+  font-style: none;
+  color: #fff;
+  text-decoration: none;
 }
 
