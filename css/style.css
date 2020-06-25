@@ -202,7 +202,7 @@ html {
 /* SECTION OFERTA */
 
 #oferta {
-  height: 460vh;
+  height: 410vh;
   width: 100vw;
   position: relative;
   background-image: url('../img/articTheme4.jpg');
@@ -346,7 +346,7 @@ html {
 
 
 .footer__container {
-  margin-top: 14em;
+  margin-top: 16em;
   text-align: center;
   font-size: .7em;
   font-style: none;
