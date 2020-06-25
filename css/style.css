@@ -212,8 +212,19 @@ html {
 
 .section__container--oferta {
   height: 300vh;
-  background-color: rgb(36, 36, 36, .86);
+  background-color: rgb(36, 36, 36, .2);
   position: relative;
+}
+
+.offer__line {
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-bottom-width: 0px;
+
+  width: 80%;
+  border: blanchedalmond;
+  border-style: solid;
 }
 
 .offer__container {
