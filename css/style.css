@@ -202,7 +202,7 @@ html {
 /* SECTION OFERTA */
 
 #oferta {
-  height: 130vh;
+  height: 300vh;
   width: 100vw;
   position: relative;
   background-image: url('../img/articTheme4.jpg');
@@ -211,8 +211,8 @@ html {
 }
 
 .section__container--oferta {
-  height: 130vh;
-  background-color: rgb(36, 36, 36, .92);
+  height: 300vh;
+  background-color: rgb(36, 36, 36, .86);
   position: relative;
 }
 
