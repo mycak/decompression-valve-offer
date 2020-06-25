@@ -53,4 +53,3 @@ function debounce(func, wait = 10, immediate = true) {
   base.arrow.addEventListener('click', goToHash);
   base.arrow2.addEventListener('click', goToHash2);
   base.arrow3.addEventListener('click', goToHash3);
-  document.getElementById('goToZawory').addEventListener('click', goToHash);
