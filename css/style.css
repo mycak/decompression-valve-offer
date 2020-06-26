@@ -202,48 +202,85 @@ html {
 /* SECTION OFERTA */
 
 #oferta {
-  height: 410vh;
+  height: 110vh;
   width: 100vw;
   position: relative;
-  background-image: url('../img/articTheme4.jpg');
+  
   background-size: cover;
   color: #fff;
 }
 
 .section__container--oferta {
-  height: 300vh;
-  background-color: rgb(36, 36, 36, .2);
+  height: 110vh;
   position: relative;
+  background-image: url('../img/test2.jpeg');
+  background-size: cover;
+  color: black;
 }
 
-.offer__line {
-  margin-left: auto;
-  margin-right: auto;
-  
-  border-bottom-width: 0px;
-
-  width: 80%;
-  border: blanchedalmond;
-  border-style: solid;
-}
-
-.offer__container {
-  height: 80vh;
-  padding-top: 6em;
-
-  position: relative;
-  flex-direction: row;
-  display: flex;
-}
-
-.offer__img {
-  padding-top: 4em ;
-}
-
-.offer__descp {
+.section__container--oferta {
   text-align: center;
-  margin-right: 2em;
-  font-size: 1.2em;
+  padding-top: 6em;
+}
+
+.products__container {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 4em;
+}
+
+.product__container {
+  height: 40vh;
+  width: 40vh;
+  background-color: #3e3f42;
+  position: relative;
+  color: #fff;  
+  transition: all 0.8s ease;
+}
+
+.product__container:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+}
+
+.product__container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Products desp */
+.section__container--product {
+  background-color: #e3e4e6;
+  position: relative;
+}
+
+.desc__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 6em;
+}
+
+.product__img {
+  width: 40vw;
+  height: 80vh;
+  background-image: url('../img/maxielebarevo-removebg-preview.png');
+  background-size: cover;
+}
+
+.product__descp {
+  margin-top: 3em;
+  width: 40vw;
+  text-align: center;
+}
+
+.product__descp h2 {
+  margin-top: 6em;
 }
 
 /* SECTION KONTAKT */
@@ -251,6 +288,7 @@ html {
 #kontakt {
   height: 120vh;
   width: 100vw;
+  position: relative;
 }
 
 .section__container--kontakt {

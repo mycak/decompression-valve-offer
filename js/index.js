@@ -26,12 +26,28 @@ const goToHash3 = () => {
 }
 
 
+
 const base = {
     nav: document.querySelector('.navbar'),
     arrow: document.querySelector('.arrow'),
     arrow2: document.querySelector('.arrow--2'),
-    arrow3: document.querySelector('.arrow--3')
+    arrow3: document.querySelector('.arrow--3'),
+    imgBoxes: document.querySelectorAll('.product__container')
 };
+
+base.imgBoxes.forEach(box => box.addEventListener('click', e => {
+  e.target.parentNode
+      if (e.target.dataset.id) {
+      document.getElementById(`${e.target.dataset.id}`).scrollIntoView({
+        behavior: 'smooth'
+      });
+    } else {
+      document.getElementById(`${e.target.parentNode.dataset.id}`).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  })
+)
 
 function debounce(func, wait = 10, immediate = true) {
     var timeout;
@@ -52,4 +68,4 @@ function debounce(func, wait = 10, immediate = true) {
 
   base.arrow.addEventListener('click', goToHash);
   base.arrow2.addEventListener('click', goToHash2);
-  base.arrow3.addEventListener('click', goToHash3);
+ // base.arrow3.addEventListener('click', goToHash3);
