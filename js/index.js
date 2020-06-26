@@ -24,6 +24,12 @@ const goToHash3 = () => {
     behavior: 'smooth'
   });
 }
+const goToHash4 = () => {
+  document.getElementById('jakdobrac').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
 
 
 
@@ -31,9 +37,17 @@ const base = {
     nav: document.querySelector('.navbar'),
     arrow: document.querySelector('.arrow'),
     arrow2: document.querySelector('.arrow--2'),
-    arrow3: document.querySelector('.arrow--3'),
-    imgBoxes: document.querySelectorAll('.product__container')
+    arrow4: document.querySelector('.arrow--4'),
+    imgBoxes: document.querySelectorAll('.product__container'),
+    arrowBoxes: document.querySelectorAll('.product__descp'),
+    backArrows: document.querySelectorAll('arrow__container--back')
 };
+
+base.arrowBoxes.forEach(box => box.addEventListener('click', e => {
+  if(e.target.parentNode.className === 'arrow__container--back' ) {
+    goToHash2();
+  }
+}))
 
 base.imgBoxes.forEach(box => box.addEventListener('click', e => {
   e.target.parentNode
@@ -68,4 +82,8 @@ function debounce(func, wait = 10, immediate = true) {
 
   base.arrow.addEventListener('click', goToHash);
   base.arrow2.addEventListener('click', goToHash2);
- // base.arrow3.addEventListener('click', goToHash3);
+  base.arrow4.addEventListener('click', goToHash4);
+  //base.arrow3.addEventListener('click', goToHash3);
+
+
+ //test
