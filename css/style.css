@@ -255,7 +255,12 @@ html {
 
 /* Products desp */
 .section__container--product {
+  height: 120vh;
   background-color: #e3e4e6;
+}
+
+.section__container--last {
+  height: 150vh;
 }
 
 .desc__container {
@@ -286,7 +291,7 @@ html {
 }
 
 .arrow__container--back {
-  margin-top: 2em;
+  margin-top: 0em;
   display: flex;
   flex-direction: column;
   width: 12%;
@@ -441,3 +446,13 @@ html {
   text-decoration: none;
 }
 
+/* aditional classes */
+
+.active--shadow {
+  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #fff;
+  transition: all 0s ease;
+}
+
+.active--shadow a {
+  transition: all 0s ease;
+}
