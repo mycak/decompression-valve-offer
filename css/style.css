@@ -128,6 +128,11 @@ html {
   transition: all 0.8s ease;
   }
 
+  .arrow__container--next {
+    width: 40px;
+    height: 40px;
+  }
+
 .arrow__container:hover {
   transform: scale(1.7);
   transition: all 0.8s ease;
@@ -156,11 +161,13 @@ html {
 .section__container--zawory {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .section__title {
-  margin:auto;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   text-align:center;
 }
@@ -170,7 +177,7 @@ html {
 }
 
 .section__description {
-  margin-top: -6em;
+  margin-top: -4em;
   margin-left:1em;
   margin-right:1em;
   text-align: left;
@@ -183,18 +190,35 @@ html {
   width: 75%;
   height: 75%;
 }
-
-.arrow__container--zawory {
-  position: absolute;
-  bottom: 5%;
-  left: 48%;
+.arrow__next {
+  grid-area: 3 / 1 / 4 / 2;
+  margin-top: 2em;
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section__next {
-  position: absolute;
-  bottom: 17%;
-  left: 43%;
+.arrow__next--icon {
+  transition: all 0.8s ease;
 }
+
+
+.arrow__next--icon:hover {
+  transform: scale(1.5);
+  transition: all 0.8s ease;
+}
+
+
+.arrow__next--icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
+}
+
+
 
 
 
@@ -203,9 +227,10 @@ html {
 #oferta {
   height: 100vh;
   width: 100vw;
-  background-image: url('../img/greyTheme.jpg');
-  background-size: cover;
+  background-image: url('../img/test.jpg');
+  background-size:cover;
   color: #fff;
+  background-repeat: no-repeat;
 }
 
 .section__container--oferta {
@@ -257,7 +282,7 @@ html {
 
 .section__container--product {
   position: absolute;
-  margin-top: -12em;
+  margin-top: -9.8em;
   /* top: 400vh; */
   height: 100vh;
   background-color: #e3e4e6;
@@ -332,7 +357,7 @@ html {
 
 .section__next--offer {
   position: relative;
-  bottom: -65%;
+  bottom: -70%;
   padding-top: 2em;
   text-align: center;
   color: #fff;
@@ -341,16 +366,24 @@ html {
 
 .arrow__container--oferta {
   position: relative;
-  bottom: -60%;
+  bottom: -65%;
   margin-top: 3em;
+  height: 40px;
+  width: 40px;
 }
 
 /* SECTION JAK DOBRAC */
 
+#jakdobrac {
+  background: url('/img/test2.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
 .section__container--jakdobrac {
   text-align: center;
   height: 140vh;
-  background-color: rgb(36, 36, 36, .8);
+  background-color: rgb(36, 36, 36, .9);
 
 }
 
@@ -369,6 +402,8 @@ html {
 .arrow__container--kontakt {
   margin-bottom: 0em;
   margin-top: 0;
+  height: 40px;
+  width: 40px;
 }
 
 /* SECTION KONTAKT */
