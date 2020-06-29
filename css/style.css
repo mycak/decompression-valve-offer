@@ -141,17 +141,16 @@ html {
 #zawory {
   background-image: url('../img/articTheme2.jpg');
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 100vh;
   color: #fff;
   position: relative;
-  height: 130vh;
   width: 100vw;
   background-size: cover;
 }
 
 .section__container {
   background-color: rgb(36, 36, 36, .8);
-  height: 130vh;
+  height: 100vh;
   width: 100vw;
 }
 .section__container--zawory {
@@ -202,7 +201,7 @@ html {
 /* SECTION OFERTA */
 
 #oferta {
-  height: 120vh;
+  height: 100vh;
   width: 100vw;
   background-image: url('../img/greyTheme.jpg');
   background-size: cover;
@@ -210,7 +209,7 @@ html {
 }
 
 .section__container--oferta {
-  height: 130vh;
+  height: 100vh;
   background-color: rgb(103, 111, 122, .8);
   background-size: cover;
   color: #fff;
@@ -220,7 +219,7 @@ html {
 
 .section__container--oferta h1{
   text-align: center;
-  padding-top: 4em;
+  padding-top: 2em;
   margin-top: 0;
 }
 
@@ -228,7 +227,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 4em;
+  margin-top: 4em;
 }
 
 .product__container {
@@ -258,10 +257,11 @@ html {
 
 .section__container--product {
   position: absolute;
-  left: 100vw;
-  height: 130vh;
+  margin-top: -12em;
+  /* top: 400vh; */
+  height: 100vh;
   background-color: #e3e4e6;
-  /* transform: translate(100%); */
+  transform: translateY(-400%);
   color: black;
   transition: all 1s ease;
   overflow: hidden;
@@ -270,13 +270,11 @@ html {
 .product--active {
   display: inherit;
   position: relative;
+  transform: translateY(0%);
+/* 
   left:0;
-  top:0;
+  top:0; */
   z-index: 100;
-}
-
-.section__container--last {
-  height: 150vh;
 }
 
 .desc__container {
@@ -333,20 +331,44 @@ html {
 }
 
 .section__next--offer {
+  position: relative;
+  bottom: -65%;
   padding-top: 2em;
   text-align: center;
-  color: black;
+  color: #fff;
   margin: auto;
 }
 
 .arrow__container--oferta {
+  position: relative;
+  bottom: -60%;
   margin-top: 3em;
 }
 
 /* SECTION JAK DOBRAC */
 
 .section__container--jakdobrac {
+  text-align: center;
+  height: 140vh;
+  background-color: rgb(36, 36, 36, .8);
 
+}
+
+.section__container--jakdobrac h1 {
+  margin-top: 0;
+  padding-top: 3em;
+}
+.section__container--jakdobrac ul {
+  text-align: left;
+}
+
+.section__content {
+  margin-bottom: 0;
+}
+
+.arrow__container--kontakt {
+  margin-bottom: 0em;
+  margin-top: 0;
 }
 
 /* SECTION KONTAKT */
