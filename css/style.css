@@ -553,6 +553,33 @@ html {
   html {
     font-size: 12px;
   }
+
+  .arrow__next--icon {
+    margin-bottom: 2em;
+  }
+
+
+  #zawory {
+    height: 140vh;
+  }
+  .section__container {
+    height: 140vh;
+  }
+  .section__container--zawory {
+    height: 140vh;
+  }
+
+  #oferta {
+    height: 140vh;
+  }
+
+  .section__container--oferta {
+    height: 140vh;
+  }
+
+  #kontakt, .section__container--kontakt {
+    height: 120vh;
+  }
 }
 
 @media (max-width: 575.98px) {
