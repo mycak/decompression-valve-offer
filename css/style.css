@@ -552,8 +552,19 @@ html {
   html {
     font-size: 10px;
   }
-  #hero, #zawory, #oferta, #jakdobrac, #kontakt, .section__container, .section__container--oferta, .section__container--product {
+
+  #hero, #zawory,  #jakdobrac, #kontakt, .section__container  {
     height: 140vh;
   }
+
+  #oferta, .section__container--oferta, .section__container--product {
+    height: 100vh;
+  }
+
+  .product__container {
+    width: 15vw;
+    height: 15vh;
+  }
+
 }
 
