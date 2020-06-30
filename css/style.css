@@ -113,11 +113,9 @@ html {
 }
 .hero__container--subtitle {
   margin-top: -3em;
-}
-
-.hero__container p{
   font-size: 1.5em;
 }
+
 /*Arrow*/
 
 .arrow__container {
@@ -555,15 +553,49 @@ html {
     font-size: 10px;
   }
 
-  #hero, #zawory,  #jakdobrac, .section__container  {
+  /* HERO */
+  .hero__container--title {
+    font-size: 2em;
+    font-weight: 200;
+  }
+
+  .hero__container--subtitle {
+    margin-top: 0;
+    font-size: 1em;
+  }
+
+  /* ZAWORY */
+  #zawory {
+    height: 120vh;
+  }
+  .section__container {
+    height: 140vh;
+  }
+  .section__container--zawory {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .section__image {
+    display: none;
+  }
+
+  .section__description {
+    margin-top: 0em;
+  }
+
+  #jakdobrac {
     height: 140vh;
   }
 
-  #oferta, .section__container--oferta, .section__container--product {
+
+
+/* OFERTA */
+  .section__container--oferta {
     height: 100vh;
   }
-  
-  
+
   .products__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -573,14 +605,19 @@ html {
   }
 
   .product__container {
-    width: 20vw;
+    width: 35vw;
     height: 20vh;
   }
-  .hero__container h2 {
-    font-size: 24px;
+
+  .section__next--offer {
+    bottom: -70%;
+    padding-top: 2em;
   }
+
+/* KONTAKT */
+
   #kontakt, .section__container--kontakt {
-    height: 200vh;
+    height: 120vh;
   }
   .desc h1 {
     font-size: 30px;
@@ -594,7 +631,6 @@ html {
   .icons {
     width: 100%;
   }
-
 
   .icons>div img {
     width: 20px;
