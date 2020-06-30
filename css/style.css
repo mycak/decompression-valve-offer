@@ -829,7 +829,7 @@ html {
 
 
 
-@media screen and (orientation:landscape) {
+/* @media screen and (orientation:landscape) {
   .arrow__next--icon {
     margin-bottom: 2em;
   }
@@ -860,4 +860,4 @@ html {
   #jakdobrac {
     height: 140vh;
   }
-}
+} */
