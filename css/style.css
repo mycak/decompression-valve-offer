@@ -382,7 +382,7 @@ html {
 
 .section__container--jakdobrac {
   text-align: center;
-  height: 140vh;
+  height: 130vh;
   background-color: rgb(36, 36, 36, .9);
 
 }
@@ -409,7 +409,7 @@ html {
 /* SECTION KONTAKT */
 
 #kontakt {
-  height: 120vh;
+  height: 130vh;
   width: 100vw;
   position: relative;
 }
@@ -531,20 +531,29 @@ html {
 }
 
 @media (max-width: 1199.98px) {
-  
+  html {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 991.98px) {
-
+  html {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767.98px) {
-  
+  html {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 575.98px) {
   html {
     font-size: 10px;
+  }
+  #hero, #zawory, #oferta, #jakdobrac, #kontakt, .section__container, .section__container--oferta, .section__container--product {
+    height: 140vh;
   }
 }
 
