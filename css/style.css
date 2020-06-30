@@ -560,10 +560,19 @@ html {
   #oferta, .section__container--oferta, .section__container--product {
     height: 100vh;
   }
+  
+  
+  .products__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 30px 10px;
+  }
 
   .product__container {
-    width: 15vw;
-    height: 15vh;
+    width: 20vw;
+    height: 20vh;
   }
 
 }
