@@ -522,14 +522,14 @@ html {
 
 /* aditional classes */
 
-.active--shadow {
+/* .active--shadow {
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #fff;
   transition: all 0s ease;
 }
 
 .active--shadow a {
   transition: all 0s ease;
-}
+} */
 
 @media (max-width: 1199.98px) {
   html {
@@ -555,7 +555,7 @@ html {
     font-size: 10px;
   }
 
-  #hero, #zawory,  #jakdobrac, #kontakt, .section__container  {
+  #hero, #zawory,  #jakdobrac, .section__container  {
     height: 140vh;
   }
 
@@ -577,9 +577,27 @@ html {
     height: 20vh;
   }
   .hero__container h2 {
-    font-size: 16px;
+    font-size: 24px;
   }
-  
+  #kontakt, .section__container--kontakt {
+    height: 200vh;
+  }
+  .desc h1 {
+    font-size: 30px;
+  }
 
+  .desc p {
+    text-align: center;
+    margin-left: -8em;
+    margin-right: 1em;
+  }
+  .icons {
+    width: 100%;
+  }
+
+
+  .icons>div img {
+    width: 20px;
+    height: 20px;
+  }
 }
-
