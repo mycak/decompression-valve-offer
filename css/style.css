@@ -566,7 +566,7 @@ html {
 
   /* ZAWORY */
   #zawory {
-    height: 120vh;
+    height: 100vh;
   }
   .section__container {
     height: 140vh;
@@ -574,7 +574,7 @@ html {
   .section__container--zawory {
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: 100vh;
   }
 
   .section__image {
@@ -596,6 +596,10 @@ html {
     height: 100vh;
   }
 
+  .section__container--oferta h1 {
+    margin-top: 1em;
+  }
+
   .products__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -611,7 +615,15 @@ html {
 
   .section__next--offer {
     bottom: -70%;
-    padding-top: 2em;
+    padding-top: -2em;
+  }
+
+  .arrow__container--oferta {
+    
+    bottom: -70%;
+    margin-top: 3em;
+    height: 40px;
+    width: 40px;
   }
 
 /* KONTAKT */
