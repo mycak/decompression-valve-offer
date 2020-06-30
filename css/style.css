@@ -533,6 +533,14 @@ html {
   html {
     font-size: 16px;
   }
+
+  #kontakt, .section__container--kontakt {
+    height: 160vh;
+  }
+
+  .product__img {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -619,17 +627,32 @@ html {
   }
 
   .arrow__container--oferta {
-    
     bottom: -70%;
     margin-top: 3em;
     height: 40px;
     width: 40px;
   }
 
+  .product__img {
+    display: none;
+  }
+
+  .section__container--product {
+    margin-top: -11.5em;
+  }
+
+  .product__descp {    
+    margin-top: 3em;
+    width: 90vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
 /* KONTAKT */
 
   #kontakt, .section__container--kontakt {
-    height: 120vh;
+    height: 100vh;
   }
   .desc h1 {
     font-size: 30px;
@@ -638,7 +661,7 @@ html {
   .desc p {
     text-align: center;
     margin-left: -8em;
-    margin-right: 1em;
+    margin-right: 3em;
   }
   .icons {
     width: 100%;
