@@ -19,7 +19,7 @@ html {
   /* Navbar */
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     background-color: transparent;
     transition: all 0.3s ease;
@@ -100,6 +100,7 @@ html {
   text-align: center;
   color: #bdccd9;
   transition: all 0.8s ease;
+  width: 100vw;
 }
 .hero__container:hover {
   transform: scale(1.02);
@@ -550,6 +551,7 @@ html {
 
 @media (max-width: 575.98px) {
   html {
+    width: 100vw;
     font-size: 10px;
   }
 
@@ -574,6 +576,10 @@ html {
     width: 20vw;
     height: 20vh;
   }
+  .hero__container h2 {
+    font-size: 16px;
+  }
+  
 
 }
 
